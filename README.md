@@ -1,4 +1,4 @@
-## One Minute Pitch
+## SecPitches
 A web application that allows users to create a one minute pitch and also get feedback with votes.
 ## Author Tinisha Kamau
 
