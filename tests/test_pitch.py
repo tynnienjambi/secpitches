@@ -4,8 +4,8 @@ import unittest
 
 class PitchModelTest(unittest.TestCase):
     def setUp(self):
-        self.user_Tim = User(username = 'Timmy',password = '1234', email = 'Timcrashboy@gmail.com')
-        self.new_pitch = Pitch(id=1,pitch_title='Test',pitch_content='This is a test pitch',category="interview",user = self.user_Tim,likes=0,dislikes=0)
+        self.user_tynnie = User(username = 'tynnie',password = '1234', email = 'njambik350@gmail.com')
+        self.new_pitch = Pitch(id=1,pitch_title='Test',pitch_content='This is a test pitch',category="interview",user = self.user_tynnie,likes=0,dislikes=0)
 
     def tearDown(self):
         User.query.delete()
