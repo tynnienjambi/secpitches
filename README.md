@@ -36,4 +36,4 @@ Click on One Minute Pitch
 
 License
 
-MIT (c) 2022 Timmyworldboss
+MIT (c) 2022 Tinisha Kamau
