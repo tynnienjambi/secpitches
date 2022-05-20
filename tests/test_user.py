@@ -10,7 +10,7 @@ class UserModelTest(unittest.TestCase):
         testcase  to create an instance of User class.
 
         '''
-        self.new_user = User(password = 'banana')
+        self.new_user = User(password = 'teekay2002.')
 
 
     def test_password_setter(self):
@@ -40,4 +40,4 @@ class UserModelTest(unittest.TestCase):
         '''
         testcase to comfirm that password_hash can be verified when a user passes in the correct password.
         '''
-        self.assertTrue(self.new_user.verify_password('banana'))    
+        self.assertTrue(self.new_user.verify_password('teekay2002.'))    
