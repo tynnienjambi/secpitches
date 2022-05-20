@@ -1,6 +1,6 @@
 ## One Minute Pitch
 A web application that allows users to create a one minute pitch and also get feedback with votes.
-## By Timmy
+## Author Tinisha Kamau
 
 
 ## Description
