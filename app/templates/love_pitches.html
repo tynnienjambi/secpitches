@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{%block styles%}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet"> 
+ 
+{%endblock%}
+{%block content%}
+
+<div class="jumbotron text-center" style="background-color: rgb(124, 114, 114); padding: 100px 25px; font-family: 'Indie Flower', cursive;">
+   
+</div>
+<div class="col-md-4" style="text-align: center;">
+  
+</div>
+<div class="container" style="font-family: 'Indie+Flower', cursive;">
+    <hr>
+    <div class="row">
+        {{macro.displayPitches(pitches)}}
+    </div>
+</div>
+{%endblock%}

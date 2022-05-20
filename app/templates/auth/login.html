@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+{%block styles%}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet"> 
+ 
+{%endblock%}
+{% block content %}
+<div style="background-color:rgb(131, 151, 151);border-radius:7px;" class="container">
+    <div class="row" style="margin-top: 50px">
+      <div class= "col-md-2"> </div>
+      <div class="col-md-8">
+      <!--Flash message -->
+      {% for message in get_flashed_messages() %}
+        <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+        </div>
+      {% endfor %}
+      <!-- Login form -->
+      {{wtf.quick_form(login_form)}}
+      <p> You don't have an account? please create one <a href="{{url_for('auth.register')}}">Sign up here</a></p>
+     </div>
+     <div clas="col-md-2"> </div>
+    </div>
+</div>
+
+{% endblock%}

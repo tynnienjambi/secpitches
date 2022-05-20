@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
+
+{%block styles%}
+{{super()}}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+ <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+ <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+{%endblock%}
+
+<!-- Content block -->
+{%block content%}
+
+<body>
+ <div class="container">
+     <div class="back">
+        <div class=" text-center " style="font-family: 'Indie Flower', cursive; color: rgb(105, 97, 97); padding: 25px 25px; ">
+            
+        </div>
+        <hr>
+        <br><br>
+        <div class="container" style="font-family: 'Cormorant Upright', serif;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="well well-lg" style="text-align: center;">
+                        <h2 style="color: rgb(61, 61, 63);">Motivation Pitches :</h2>
+                        <hr>
+                        <p style="color: black;font-size:18px;">I don't believe you have to be better than everybody else. I believe you have to be better than you ever thought you could be.
+                          Read more at https://www.brainyquote.com/topics/motivational-quotes</p>
+                            <a href="{{url_for('main.interview_pitches')}}" class="btn btn-outline-dark btn-center -center"><p>SEE MORE</p></a>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <div class="well well-lg">
+                        <h2 style="color: rgb(65, 65, 66);">Love Pitches</h2>
+                        <hr>
+                        <p style="color: black;font-size:18px;">Time is too slow for those who wait, too swift for those who fear, too long for those who grieve, too short for those who rejoice, but for those who love, time is eternity.
+                          Read more at https://www.brainyquote.com/topics/love-quotes</p>
+                        <a href="{{url_for('main.product_pitches')}}" class="btn btn-outline-dark -center">SEE MORE</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="well well-lg" style="text-align: center;">
+                        <h2 style="color: rgb(64, 64, 70);"> Wisdom Pitches :</h2>
+                        <hr>
+                        <p style="color: rgb(207, 52, 52);font-size:18px;">If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much.
+                          Read more at https://www.brainyquote.com/topics/motivational-quotes</p>
+                        <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-outline-dark -center">SEE MORE</a>
+                    </div>
+                </div>
+                <br><br>
+            <div class="col-md-12" style="color: rgb(64, 64, 70);text-align: center;">
+                    <div class="well well-lg" style="text-align: center;"><br><br><br>
+                 <div style="padding-bottom: 20px; text-align: center;"><a href="{{url_for('main.new_pitch')}}" class="btn btn-outline-dark btn-center"><p><b>ADD NEW PITCH</b></p></a>
+        </div>
+     </div>
+     </div>
+    </div>
+</body>
+
+{%endblock%} 
